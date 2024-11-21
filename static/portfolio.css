@@ -1,0 +1,352 @@
+/* General Styles */
+body {
+    font-family: 'Didact Gothic', sans-serif; /* Aquí se aplica la fuente */
+    margin: 0;
+    padding: 0;
+    background-color: #F5EFEB;
+    color: #2F4156;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #567C8D;
+    border-radius: 15px;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+    border: 2px solid #364E59;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: #2F4156;
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.header-text {
+    font-size: 25px;
+}
+
+/* Banner Styles */
+.banner img {
+    width: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    height: 300px;
+    border: 2px solid #364E59;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-top: -60px;
+    position: relative;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+    overflow: hidden;
+    border: 2px solid #364E59;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-info {
+    background-color: #567C8D;
+    border: 2px solid #364E59;
+    margin-left: 15px;
+    border-radius: 15px;
+    padding: 10px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+/* boton cv */
+.button2 {
+  text-decoration: none;
+    display: inline-block;
+    color: #FFFFFF; 
+    margin-left: 5px;
+    padding: 10px;
+    cursor: pointer; 
+    font-size: 25px;
+    font-family: 'Didact Gothic', sans-serif;
+    border-radius: 15px; 
+    background: #567C8D;
+    border: 2px solid #364E59;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.button2:hover {
+    background: #364E59;
+}
+
+  
+  /* Estilos para el modal */
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-content {
+      background-color: #F5EFEB;
+      margin: 15px auto;
+      padding: 15px;
+      width: 80%;
+      max-width: 800px;
+      position: relative;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-content iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      border-radius: 15px;
+  }
+  
+  .close {
+    color: #364E59;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+/* Description */
+.description {
+    margin-top: 15px;
+    padding-left: 10px;
+    color: #364E59; 
+    background-color: #F5EFEB;
+    border-radius: 15px;
+    border: 2px solid #364E59;
+    font-size: 25px;
+}
+
+ /* General Section Styles */
+.experience-section {
+    background-color: #F5EFEB;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .section-title {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 25px;
+    color: #2F4156; 
+  }
+  
+  .section-title span {
+    color: #567C8D;
+  }
+  
+  /* Icon Gallery Styles */
+.icon-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.icon-gallery img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.icon-gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* Experience Container */
+.experience-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px; 
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.experience-box {
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  width: 50%;
+  text-align: left;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.experience-box h3 {
+  font-size: 25px;
+  color: #567C8D;
+  margin-bottom: 10px;
+}
+
+.experience-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.experience-box ul li {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 25px;
+  color: #2F4156;
+}
+
+.experience-box ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 25px;
+  color: #567C8D;
+  margin-bottom: 15px;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.section-title span {
+  color: #2F4156;
+}
+
+.projects-section {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background-color: #FFFFFF;
+  border: 2px solid #364E59;
+  border-radius: 15px;
+  width: 400px;
+  padding: 15px;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 25px;
+  color: #567C8D;
+  margin-bottom: 10px;
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.project-links .button2 {
+  font-size: 16px;
+  padding: 8px 15px;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.contact-section {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+  padding-bottom: 15px;
+  background-color: #F5EFEB;
+  border-radius: 15px;
+  border: 2px solid #364E59;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.section-title {
+  margin: 5px;
+  font-size: 25px;
+  color: #567C8D;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.contact-subtitle {
+  color: #2F4156;
+  font-size: 25px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 25px;
+  color: #364E59;
+}
+
+.contact-item img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #2F4156;
+  font-size: 25px;
+}
+
+.contact-link:hover {
+  color: #567C8D;
+}

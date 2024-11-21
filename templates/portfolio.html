@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="static/portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+    <script src="static\script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">MP</div>
+            <span class="header-text">Portfolio</span>
+        </header>
+
+        <main class="main-section">
+            <div class="banner">
+                <img src="static/images/beach.jpg" alt="Banner">
+            </div>
+
+            <div class="profile-section">
+                <div class="avatar">
+                    <img src="static/images/profile.jpg" alt="Avatar">
+                </div>
+                <div class="profile-info">
+                    <span class="name">Maximiliano Palavecino</span>
+                </div>
+                <button class="button2" onclick="showPDF()">Curriculum</button>
+            </div>
+
+            <div class="description" id="description">
+                <p>¡Hola! Soy Maxi Palavecino, tengo 17 años, soy estudiante de la orientación
+                    programación del Instituto técnico Renault, y soy programador. Me encanta hacer el frontend de las páginas web en las que trabajo.</p>
+            </div>
+
+            <section class="experience-section" id="experience-section">
+                <h2 class="section-title">Explora mi <span>experiencia</span></h2>
+                <div class="experience-container">
+                    <div class="experience-box">
+                        <h3>Development</h3>
+                        <ul>
+                            <li><img src="static/images/arrow.png" alt="Arrow"> HTML - Conocimiento avanzado</li>
+                            <li><img src="static/images/arrow.png" alt="Arrow"> CSS - Conocimiento avanzado</li>
+                            <li><img src="static/images/arrow.png" alt="Arrow"> JavaScript - Conocimiento básico</li>
+                            <li><img src="static/images/arrow.png" alt="Arrow"> React - Conocimiento intermedio</li>
+                            <li><img src="static/images/arrow.png" alt="Arrow"> Python - Conocimiento básico</li>
+                            <li><img src="static/images/arrow.png" alt="Arrow"> Flask - Conocimiento intermedio</li>
+                            <li><img src="static/images/arrow.png" alt="Arrow"> C# - Conocimiento pobre</li>
+                            <li><img src="static/images/arrow.png" alt="Arrow"> Arduino - Conocimiento básico</li>
+                            <li><img src="static/images/arrow.png" alt="Arrow"> SQL - Conocimiento básico</li>
+                        </ul>
+                        <div class="icon-gallery">
+                            <img src="static/images/html5.png" alt="HTML Icon">
+                            <img src="static/images/css3.png" alt="CSS Icon">
+                            <img src="static/images/javascript.png" alt="JavaScript Icon">
+                            <img src="static/images/react.png" alt="React Icon">
+                            <img src="static/images/python.png" alt="Python Icon">
+                            <img src="static/images/flask.png" alt="Flask Icon">
+                            <img src="static/images/csharp.png" alt="C# Icon">
+                            <img src="static/images/arduino.png" alt="Arduino Icon">
+                            <img src="static/images/sql.png" alt="SQL Icon">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects-section" id="projects-section">
+                <h2 class="section-title">Proyectos recientes</h2>
+                <div class="projects-container">
+                    <div class="project-card">
+                        <h3>Aplicación móvil para Copa Renault</h3>
+                        <img src="static/images/copapage.png" alt="Copa Renault page">
+                        <a href="https://github.com/MaxiPalavecino/Copa-renault" class="button2">GitHub</a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Web para ensayos filosóficos</h3>
+                        <img src="static/images/filosofia1.png" alt="Ensayos filosóficos page">
+                        <img src="static/images/filosofia2.png" alt="Ensayos filosóficos page">
+                        <img src="static/images/filosofia3.png" alt="Ensayos filosóficos page">
+                        <a href="https://github.com/coronel07/Ensayo-Filosoficos" class="button2">GitHub</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contact-section">
+                <h2 class="section-title">Contactame</h2>
+                <div class="contact-container">
+                    <div class="contact-item">
+                        <img src="static/images/linkedin.png" alt="LinkedIn Icon">
+                        <a href="https://www.linkedin.com/in/maximiliano-palavecino-542198280/" target="_blank" class="contact-link">LinkedIn</a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="static/images/github.png" alt="GitHub Icon">
+                        <a href="https://github.com/MaxiPalavecino" target="_blank" class="contact-link">GitHub</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="pdfModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePDF()">&times;</span>
+            <iframe src="static/images/cv.pdf" frameborder="0"></iframe>
+        </div>
+    </div>
+</body>
+</html>
